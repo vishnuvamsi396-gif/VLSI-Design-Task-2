@@ -119,3 +119,50 @@ module elevator_controller(input wire clk, input wire reset, input wire tick,
         door_open = (state == IDLE);
     end
 endmodule
+
+ 
+// Autonomous Moore traffic-light mini-project. Each state lasts its configured
+// number of clock cycles; the defaults are short for simulation and can be
+// increased for a hardware clock after choosing a suitable counter width.
+module traffic_light_controller #(
+    parameter integer RED_CYCLES = 3,
+    parameter integer GREEN_CYCLES = 3,
+    parameter integer YELLOW_CYCLES = 1
+) (
+    input wire clk, input wire reset,
+    output reg red, output reg yellow, output reg green
+);
+    localparam RED = 2'd0, GREEN = 2'd1, YELLOW = 2'd2;
+    reg [1:0] state;
+    reg [31:0] elapsed;
+    reg [31:0] state_limit;
+
+    always @* begin
+        case (state)
+            RED: state_limit = RED_CYCLES;
+            GREEN: state_limit = GREEN_CYCLES;
+            YELLOW: state_limit = YELLOW_CYCLES;
+            default: state_limit = RED_CYCLES;
+        endcase
+        red = (state == RED);
+        green = (state == GREEN);
+        yellow = (state == YELLOW);
+    end
+
+    always @(posedge clk) begin
+        if (reset) begin
+            state <= RED;
+            elapsed <= 0;
+        end else if (elapsed + 1 >= state_limit) begin
+            elapsed <= 0;
+            case (state)
+                RED: state <= GREEN;
+                GREEN: state <= YELLOW;
+                YELLOW: state <= RED;
+                default: state <= RED;
+            endcase
+        end else begin
+            elapsed <= elapsed + 1;
+        end
+    end
+endmodule
