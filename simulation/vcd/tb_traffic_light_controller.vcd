@@ -1,0 +1,107 @@
+$date
+	Sun Nov  8 06:55:23 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module tb_traffic_light_controller $end
+$var wire 1 ! yellow $end
+$var wire 1 " red $end
+$var wire 1 # green $end
+$var reg 1 $ clk $end
+$var reg 1 % reset $end
+$scope module dut $end
+$var wire 1 $ clk $end
+$var wire 1 % reset $end
+$var parameter 2 & GREEN $end
+$var parameter 32 ' GREEN_CYCLES $end
+$var parameter 2 ( RED $end
+$var parameter 32 ) RED_CYCLES $end
+$var parameter 2 * YELLOW $end
+$var parameter 32 + YELLOW_CYCLES $end
+$var reg 32 , elapsed [31:0] $end
+$var reg 1 # green $end
+$var reg 1 " red $end
+$var reg 2 - state [1:0] $end
+$var reg 32 . state_limit [31:0] $end
+$var reg 1 ! yellow $end
+$upscope $end
+$scope task cycle $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b1 +
+b10 *
+b10 )
+b0 (
+b11 '
+b1 &
+$end
+#0
+$dumpvars
+bx .
+bx -
+bx ,
+1%
+0$
+x#
+x"
+x!
+$end
+#5000
+0!
+0#
+1"
+b10 .
+b0 ,
+b0 -
+1$
+#6000
+0%
+#10000
+0$
+#15000
+b1 ,
+1$
+#20000
+0$
+#25000
+1#
+0"
+b11 .
+b1 -
+b0 ,
+1$
+#30000
+0$
+#35000
+b1 ,
+1$
+#40000
+0$
+#45000
+b10 ,
+1$
+#50000
+0$
+#55000
+1!
+0#
+b1 .
+b10 -
+b0 ,
+1$
+#60000
+0$
+#65000
+0!
+1"
+b10 .
+b0 -
+1$
+#66000
