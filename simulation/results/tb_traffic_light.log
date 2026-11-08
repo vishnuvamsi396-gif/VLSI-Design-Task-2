@@ -1,0 +1,3 @@
+VCD info: dumpfile simulation/vcd/tb_traffic_light.vcd opened for output.
+PASS: Moore/Mealy traffic-light FSM behavior
+testbench/tb_traffic_light.v:28: $finish called at 36000 (1ps)
