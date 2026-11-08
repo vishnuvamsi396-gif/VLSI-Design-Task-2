@@ -10,7 +10,7 @@ This repository contains the Task 2 RTL designs, self-checking testbenches, simu
 - FSM controllers: Moore and Mealy traffic lights, vending machine, and elevator.
 - Mini-project: a clocked Moore traffic-light controller with timed state transitions.
 - Verification: seven self-checking testbenches, simulator logs, VCD traces, and four GTKWave screenshots.
-- Documentation: RTL block diagrams, FSM diagrams, timing diagram, truth tables, counter design documentation, requirements checklist, and project report PDF.
+- Documentation: RTL block diagrams, FSM diagrams, timing diagram, truth tables, counter design documentation, and project report PDF.
 
 ## Tools
 
@@ -40,7 +40,7 @@ gtkwave simulation/vcd/tb_traffic_light.vcd
 - `simulation/results/` - captured simulator output
 - `simulation/vcd/` - waveform traces
 - `waveforms/` - GTKWave screenshot previews and image files
-- `docs/` - counter design, truth tables, diagrams, timing notes, checklist, and report
+- `docs/` - counter design, truth tables, diagrams, timing notes, and report
 - `progress_log/` - dated work log
 
 The Task 2 PDF lists GTKWave screenshots as a deliverable but does not specify a required number. Four representative screenshots are included; all seven testbenches also have committed simulator logs and VCD traces.
