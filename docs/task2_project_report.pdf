@@ -1,131 +1,587 @@
 %PDF-1.4
+%‚„œ”
 1 0 obj
-<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+<<
+/Producer (pypdf)
+/Title (VLSI Design Task 2 Project Report)
+>>
 endobj
 2 0 obj
-<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+<<
+/Type /Pages
+/Count 3
+/Kids [ 4 0 R 12 0 R 15 0 R ]
+>>
 endobj
 3 0 obj
-<< /Length 2075 >>
-stream
-0.08 0.20 0.35 rg BT /F2 19 Tf 50 752 Td (VLSI DESIGN AND SEMICONDUCTOR ENGINEERING) Tj ET
-0.12 0.34 0.55 rg BT /F2 25 Tf 50 682 Td (Task 2 Project Report) Tj ET
-0.12 0.34 0.55 RG 50 730 m 545 730 l S
-0.08 0.20 0.35 rg BT /F2 14 Tf 50 637 Td (Project overview) Tj ET
-0.12 0.16 0.20 rg BT /F1 10 Tf 50 615 Td (This project implements and verifies reusable digital logic in synthesizable Verilog.) Tj ET
-0.12 0.16 0.20 rg BT /F1 10 Tf 50 600 Td (The work covers sequential circuits, counters, parameterized RTL, finite state machines,) Tj ET
-0.12 0.16 0.20 rg BT /F1 10 Tf 50 585 Td (clock and reset behavior, simulation, and a timed traffic-light controller.) Tj ET
-0.08 0.20 0.35 rg BT /F2 14 Tf 50 562 Td (Objectives) Tj ET
-0.08 0.20 0.35 rg BT /F1 10 Tf 60 540 Td (\267) Tj ET
-0.12 0.16 0.20 rg BT /F1 10 Tf 75 540 Td (Design sequential logic with synchronous and asynchronous reset options.) Tj ET
-0.08 0.20 0.35 rg BT /F1 10 Tf 60 523 Td (\267) Tj ET
-0.12 0.16 0.20 rg BT /F1 10 Tf 75 523 Td (Implement common counters and parameterized reusable RTL blocks.) Tj ET
-0.08 0.20 0.35 rg BT /F1 10 Tf 60 506 Td (\267) Tj ET
-0.12 0.16 0.20 rg BT /F1 10 Tf 75 506 Td (Build Moore and Mealy controllers and practice state-based design.) Tj ET
-0.08 0.20 0.35 rg BT /F1 10 Tf 60 489 Td (\267) Tj ET
-0.12 0.16 0.20 rg BT /F1 10 Tf 75 489 Td (Verify behavior with self-checking testbenches and inspectable waveform traces.) Tj ET
-0.08 0.20 0.35 rg BT /F2 14 Tf 50 464 Td (Development environment) Tj ET
-0.12 0.16 0.20 rg BT /F1 10 Tf 50 442 Td (Ubuntu 26.04.1 LTS under WSL; Icarus Verilog 12.0; GTKWave 3.3.126; Git 2.53.0.) Tj ET
-0.12 0.16 0.20 rg BT /F1 10 Tf 50 427 Td (The project is maintained in a public GitHub repository on its main branch.) Tj ET
-0.08 0.20 0.35 rg BT /F2 14 Tf 50 404 Td (Repository) Tj ET
-0.08 0.34 0.70 rg BT /F1 10 Tf 50 382 Td (https://github.com/vishnuvamsi396-gif/VLSI-Design-Task-2) Tj ET
-0.7 0.75 0.80 RG 50 42 m 545 42 l S
-0.35 0.40 0.48 rg BT /F1 8 Tf 50 27 Td (Task 2 | Project report) Tj ET
-0.35 0.40 0.48 rg BT /F1 8 Tf 525 27 Td (1 / 3) Tj ET
-endstream
+<<
+/Type /Catalog
+/Pages 2 0 R
+>>
 endobj
 4 0 obj
-<< /Type /Page /Parent 9 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R /F2 2 0 R >> >> /Contents 3 0 R >>
+<<
+/Annots [ 5 0 R ]
+/Contents 6 0 R
+/MediaBox [ 0 0 595.2756 841.8898 ]
+/Resources <<
+/Font 7 0 R
+/ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>>
+/Rotate 0
+/Trans <<
+>>
+/Type /Page
+/Parent 2 0 R
+>>
 endobj
 5 0 obj
-<< /Length 2362 >>
-stream
-0.08 0.20 0.35 rg BT /F2 19 Tf 50 752 Td (DESIGN AND IMPLEMENTATION) Tj ET
-0.12 0.34 0.55 RG 50 730 m 545 730 l S
-0.08 0.20 0.35 rg BT /F2 14 Tf 50 637 Td (Sequential circuits) Tj ET
-0.12 0.16 0.20 rg BT /F1 10 Tf 50 615 Td (The sequential RTL includes a D flip-flop, an 8-bit register, and a shift register.) Tj ET
-0.12 0.16 0.20 rg BT /F1 10 Tf 50 600 Td (Synchronous reset is sampled on the active clock edge. Asynchronous reset acts) Tj ET
-0.12 0.16 0.20 rg BT /F1 10 Tf 50 585 Td (independently of that edge. Edge-triggered state updates use nonblocking assignments.) Tj ET
-0.08 0.20 0.35 rg BT /F2 14 Tf 50 562 Td (Counters and parameterized blocks) Tj ET
-0.12 0.16 0.20 rg BT /F1 10 Tf 50 540 Td (Implemented counters: 4-bit up and down, Mod-10, 4-bit ring, and 4-bit Johnson.) Tj ET
-0.12 0.16 0.20 rg BT /F1 10 Tf 50 525 Td (Parameterized register, counter, and shift-register modules support multiple widths.) Tj ET
-0.12 0.16 0.20 rg BT /F1 10 Tf 50 510 Td (The self-checking parameter testbench exercises both 4-bit and 8-bit instances.) Tj ET
-0.08 0.20 0.35 rg BT /F2 14 Tf 50 487 Td (Finite state machines) Tj ET
-0.12 0.16 0.20 rg BT /F1 10 Tf 50 465 Td (Traffic-light examples include a Moore controller and a Mealy controller with an) Tj ET
-0.12 0.16 0.20 rg BT /F1 10 Tf 50 450 Td (emergency input. The vending machine accepts 5-unit and 10-unit coins for a 15-unit) Tj ET
-0.12 0.16 0.20 rg BT /F1 10 Tf 50 435 Td (product. The elevator controller handles requests among three floors.) Tj ET
-0.12 0.16 0.20 rg BT /F1 10 Tf 50 420 Td (The mini-project is an autonomous Moore traffic-light controller with configurable) Tj ET
-0.12 0.16 0.20 rg BT /F1 10 Tf 50 405 Td (RED, GREEN, and YELLOW durations. Its outputs depend on the registered state.) Tj ET
-0.08 0.20 0.35 rg BT /F2 14 Tf 50 382 Td (Design documentation) Tj ET
-0.12 0.16 0.20 rg BT /F1 10 Tf 50 360 Td (SVG diagrams show the RTL overview, traffic-light FSM, vending FSM, elevator FSM,) Tj ET
-0.12 0.16 0.20 rg BT /F1 10 Tf 50 345 Td (and a conceptual clock/reset timing illustration. Counter sequences and reset behavior) Tj ET
-0.12 0.16 0.20 rg BT /F1 10 Tf 50 330 Td (are described in docs/design_notes.md.) Tj ET
-0.7 0.75 0.80 RG 50 42 m 545 42 l S
-0.35 0.40 0.48 rg BT /F1 8 Tf 50 27 Td (Task 2 | Design and implementation) Tj ET
-0.35 0.40 0.48 rg BT /F1 8 Tf 525 27 Td (2 / 3) Tj ET
-endstream
+<<
+/A <<
+/S /URI
+/Type /Action
+/URI (https\072\057\057github\056com\057vishnuvamsi396\055gif\057VLSI\055Design\055Task\0552)
+>>
+/Border [ 0 0 0 ]
+/Rect [ 117.765 225.6236 301.821 235.2236 ]
+/Subtype /Link
+/Type /Annot
+>>
 endobj
 6 0 obj
-<< /Type /Page /Parent 9 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R /F2 2 0 R >> >> /Contents 5 0 R >>
-endobj
-7 0 obj
-<< /Length 2519 >>
+<<
+/Filter [ /ASCII85Decode /FlateDecode ]
+/Length 2564
+>>
 stream
-0.08 0.20 0.35 rg BT /F2 19 Tf 50 752 Td (SIMULATION AND SUBMISSION STATUS) Tj ET
-0.12 0.34 0.55 RG 50 730 m 545 730 l S
-0.08 0.20 0.35 rg BT /F2 14 Tf 50 637 Td (Verification results) Tj ET
-0.12 0.16 0.20 rg BT /F1 10 Tf 50 615 Td (All seven self-checking testbenches passed with Icarus Verilog 12.0 in Ubuntu/WSL.) Tj ET
-0.08 0.20 0.35 rg BT /F1 10 Tf 60 600 Td (\267) Tj ET
-0.12 0.16 0.20 rg BT /F1 10 Tf 75 600 Td (Sequential logic and synchronous/asynchronous reset behavior.) Tj ET
-0.08 0.20 0.35 rg BT /F1 10 Tf 60 583 Td (\267) Tj ET
-0.12 0.16 0.20 rg BT /F1 10 Tf 75 583 Td (Up, down, Mod-10, ring, and Johnson counter sequences.) Tj ET
-0.08 0.20 0.35 rg BT /F1 10 Tf 60 566 Td (\267) Tj ET
-0.12 0.16 0.20 rg BT /F1 10 Tf 75 566 Td (Parameterized register, counter, and shift-register operation at 4 and 8 bits.) Tj ET
-0.08 0.20 0.35 rg BT /F1 10 Tf 60 549 Td (\267) Tj ET
-0.12 0.16 0.20 rg BT /F1 10 Tf 75 549 Td (Moore and Mealy traffic-light behavior and timed traffic-light mini-project.) Tj ET
-0.08 0.20 0.35 rg BT /F1 10 Tf 60 532 Td (\267) Tj ET
-0.12 0.16 0.20 rg BT /F1 10 Tf 75 532 Td (Vending-machine and elevator state transitions.) Tj ET
-0.08 0.20 0.35 rg BT /F1 10 Tf 60 515 Td (\267) Tj ET
-0.12 0.16 0.20 rg BT /F1 10 Tf 75 515 Td (Reset timing around rising clock edges.) Tj ET
-0.12 0.16 0.20 rg BT /F1 10 Tf 50 498 Td (The corresponding seven simulator logs are in simulation/results/ and seven VCD) Tj ET
-0.12 0.16 0.20 rg BT /F1 10 Tf 50 483 Td (traces are in simulation/vcd/. Run all tests with: bash scripts/run_all.sh) Tj ET
-0.08 0.20 0.35 rg BT /F2 14 Tf 50 460 Td (Remaining evidence) Tj ET
-0.12 0.16 0.20 rg BT /F1 10 Tf 50 438 Td (GTKWave screenshots still need to be captured after visually inspecting the VCD traces.) Tj ET
-0.12 0.16 0.20 rg BT /F1 10 Tf 50 423 Td (The screenshots are not represented as complete in this report or checklist until) Tj ET
-0.12 0.16 0.20 rg BT /F1 10 Tf 50 408 Td (they are added to waveforms/. The submission checklist is docs/requirements_checklist.md.) Tj ET
-0.08 0.20 0.35 rg BT /F2 14 Tf 50 385 Td (Conclusion) Tj ET
-0.12 0.16 0.20 rg BT /F1 10 Tf 50 363 Td (The RTL and verification flow are organized for reuse. The passing test suite provides) Tj ET
-0.12 0.16 0.20 rg BT /F1 10 Tf 50 348 Td (simulation evidence for the implemented circuits and controllers.) Tj ET
-0.7 0.75 0.80 RG 50 42 m 545 42 l S
-0.35 0.40 0.48 rg BT /F1 8 Tf 50 27 Td (Task 2 | Simulation and submission status) Tj ET
-0.35 0.40 0.48 rg BT /F1 8 Tf 525 27 Td (3 / 3) Tj ET
+Gau0E96].!'&MqUbgOaqB]?k[h)2U(S()=\>BL^j?-j92+lU>t6U'r&O7*KB;RA!tG&,dOjq%YLKC9`fAk3+Yr\F(0aT12Bi:oG;`aQ:U-63E!1H:q"^/(8\Z,$+L#sC3SnIk[\nDNlT`:5t"S)b\ZLP6m8'9V<b0*rM@12u$qpGZq<>YSBRJ`Dl]W7Bi4cOYF)Nb":@U'_cYi<^p!1k<!"p0+uhG`7=bAf2RoT3Zku'34:.%WO[f/!]@paQH8q(F>U69:[S5l?inf_(;b'!WN14?X`Y_'G"gM"F"Cpr.hU73!M)Sn13MGO-$J,6-(&Y\.!@&\6OrQj%7)sY<Fg[/]Irh(h<mWLX<oS(u]Hkqsirai:&f9!k>c<r9<jO)-ib>I(l-([bi]4I[lt#5R>,P^-4]0GBsSNjo,?4GMC5oG!7TLpgf::#*;:/-\EBtE4lhY@-piO&#@6b.?AF,g.D7j-im*_k_J+.8B.(\7t==hP7[h1*,lk<(<53T",#TuqVJ0`eo;%`Za7-&'MVo7Z?cnfE>`BrAc8Nq6WVF#<+5AbkIO\jeM7'Liadad@l*p[V6_M.CL-#I=9E2r[i8j,/EKPb]E:38KL*1>fG,"]GRZtg/CG>GnPpkm'Pg^O[CS.Pd!FHO#5-YA=)cpfeCe]=10f5b1ga6Zh<4G<3VtVH8JPJT"DP,oS$Y`#<D]mY)OFfqb)C(QkCgcY06N6s>$Qq)'']p@^/UBH_/])ZQ0(ZlbY^s2.TP(i6a\'\d:Lbig&Sfe*??gm*e^YlC+;#OKH>67\h)8Da1T/J\&@q(A#OO)^$@F[/9EXAol=&"L5\l39Ur#Ko6<6&N]i2Z'A!L,o,'qZ(I$g8f?+'m^p\Ocbdup+HND>JI`U:-[_)3p#'BWrFrQSd[E]>;j:*s;fNo\Qd$YrCPYY*fmY#Dn>aL*X"Us[d9=eUMA@[W!74h"&+IS>L1Xd!@YO1,)6KL$=?4r\GYN[=:1S?;r!KuS9-BdLbl-cSGqiYu0=Ya,ShRtX;(k=T:#)J?+KL=N92ie3?iGRZV7e6U*2dm[N5j(^C_;'kMr?0\Y&JSAu$1e`tHS?80"eB_lK$K))K?hF?%3lPM,T+mfcskXg6=ad[$T_%#:hN,e\23)]W$7XtSutN>#T_1G-t:!GH!guHa.5KT\S]V-%*7[BR]KKZD>PmZhPCCL8I?GeW;TTZGc6"_h"NO#!<dpphl%MP5N]]7Dn_-Nd(\fUR'B#+S9sZsbJ!DTjW9VSSpTF7QnU:8:P.Q^#VCu5-tJ[A1>L@>L3r>W4nmb'2]b=AEDM2Fh?][]Fed"cXdt7(IZ[%d7E>AI,VGR'pg9Y8*_&m=q&ScGa7_"g=qS<2GSu1#Gg'K@iaoWn_8o#,$&3[LFFgb;7H$'//b([.+^Th.:V8sAHZpX$LaU"MDhQEd\l%O?f$4@202XU(5[MM/ohQt)T7[e1)6OW392#2<g!=$b[G#5@hk'Oc:l>W?-#Hc.0FYfH:^+1DVC)Gc:).qa;ILb\C'>E-Su7noc:'fF7o0\*GWR^]OF]:E#li=liO?-#g]<0b]UbHi#]$p^#)<.=RN\uPi<#Phe$Y_eA0h!]hk.Ghd)ERWOI<,,];C,Cdf*eiVq'8LWsnL)h5GeZ+iuu/Z7DOkLY3*$Wg#<,#2!QHLEf`>[[#\U/5gmX?)5HAak<#lZ:1%X1KJg!D]7S0f./=2P#YZG7:V7<Gh?CrKg%A4(%,3L9)NXDr7I9/YUGr\HD>7,Jr]$5?2bVbMtrUJ\7A9>ltSa"X1Y0QW%BQ-YRKJ2P,`_c:?Phme:=Mm+hW^hC;W)20CD+E"K3J#&lrBJ]kg;^U:t0K=@2q<j^LcA?K.F:79@$kX#RfMWWh.G&_E>pl"*[qi"HBh;RMOim^7jY6ep2TT,Dq<Nk07HiCBB[oGL)p#lR-%n?o+\7]k[X0$8>F%Pr%%<E6O(YZ\0TX':H;GBdRLMDD6:"kjX^q':juI@B1o`^6FcWU''OG<;N0NHW_3XlRld=t>OsAuhqZXYH9+r&"7T7KXkP@7r(klkNEq,=="\]njK=dhp:6'eJ5..hQKgNsX/#JIgn0=OR/Cq+]2k"38_()TZ0lHecO5'l<fmKFaG7L0J&&]u4HNQ^Fl!(qG'S=VU*K,E-u0l_1H\6G]KjMK4`ho/SF2nne=P]5F:24js<)<`'jTm8VnOi67d!kc:``m07'FK=.5%Z'E/YljB2/Y"JJ0Fg_MVM+,=_g$lb?Zfet<m/_H3jgLiKhdBnIFA4I$^:l9[HU'iCpoE*<V%&kY04n5[1^^Fd]oCHb3X?.mj'Me6GgUfC=!p=@Bp87X;t&rc^Rj^$R"XCs-[*r8$3.a-qc5$1[ji=5ZV=u+>:MFLA&@/Tqk2U_F<#B?RE1mFK4j>\HY?05_*`;$4Z)??i1[^M*h"38G\HO46cL=.2qc^<F>f,E1gDdu2T5C$brM?L_ValHU]#dur-7pV7U*QeJ'Ps3VR]9@Jd9\?;/+7bmf*ZLbjg>dNg?'N1cJ0-AB/IkXn$'EB9a6p5@*Qn0n"kHg)P'(+8D^\b<',&2["l1li~>
 endstream
 endobj
+7 0 obj
+<<
+/F1 8 0 R
+/F2 9 0 R
+/F3 10 0 R
+/F4 11 0 R
+>>
+endobj
 8 0 obj
-<< /Type /Page /Parent 9 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R /F2 2 0 R >> >> /Contents 7 0 R >>
+<<
+/BaseFont /Helvetica
+/Encoding /WinAnsiEncoding
+/Name /F1
+/Subtype /Type1
+/Type /Font
+>>
 endobj
 9 0 obj
-<< /Type /Pages /Kids [4 0 R 6 0 R 8 0 R] /Count 3 >>
+<<
+/BaseFont /Helvetica-Bold
+/Encoding /WinAnsiEncoding
+/Name /F2
+/Subtype /Type1
+/Type /Font
+>>
 endobj
 10 0 obj
-<< /Type /Catalog /Pages 9 0 R >>
+<<
+/BaseFont /Times-Roman
+/Encoding /WinAnsiEncoding
+/Name /F3
+/Subtype /Type1
+/Type /Font
+>>
+endobj
+11 0 obj
+<<
+/BaseFont /Symbol
+/Name /F4
+/Subtype /Type1
+/Type /Font
+>>
+endobj
+12 0 obj
+<<
+/Contents 13 0 R
+/MediaBox [ 0 0 595.2756 841.8898 ]
+/Resources <<
+/Font <<
+/F1 8 0 R
+/F1-0 14 0 R
+/F2 9 0 R
+/F3 10 0 R
+/F4 11 0 R
+>>
+/ProcSet [ /ImageB /ImageC /ImageI /PDF /Text ]
+>>
+/Rotate 0
+/Trans <<
+>>
+/Type /Page
+/Annots [ ]
+/Parent 2 0 R
+>>
+endobj
+13 0 obj
+<<
+/Length 8434
+>>
+stream
+q
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+.811765 .85098 .886275 RG
+.55 w
+n 48.18898 39.68504 m 547.0866 39.68504 l S
+BT /F1 7.5 Tf 9 TL ET
+.356863 .419608 .482353 rg
+BT 1 0 0 1 48.18898 25.51181 Tm (VLSI Design and Semiconductor Engineering | Task 2) Tj T* ET
+BT 1 0 0 1 532.4916 25.51181 Tm (2 / 3) Tj T* ET
+Q
+q
+1 0 0 1 54.18898 782.3701 cm
+q
+.086275 .541176 .568627 rg
+BT 1 0 0 1 0 2.5 Tm /F2 8.5 Tf 11 TL (DESIGN AND DOCUMENTATION) Tj T* ET
+Q
+Q
+q
+1 0 0 1 54.18898 754.3701 cm
+q
+.070588 .141176 .227451 rg
+BT 1 0 0 1 0 4 Tm /F2 16 Tf 20 TL (RTL blocks and controller behavior) Tj T* ET
+Q
+Q
+q
+1 0 0 1 54.18898 732.3701 cm
+q
+.121569 .372549 .545098 rg
+BT 1 0 0 1 0 3 Tm /F2 11 Tf 14 TL (Sequential blocks) Tj T* ET
+Q
+Q
+q
+1 0 0 1 54.18898 686.7701 cm
+q
+.141176 .203922 .278431 rg
+BT 1 0 0 1 0 30.3 Tm /F1 9.3 Tf 13.2 TL (The sequential RTL provides D flip-flops, parameterized-width registers, and shift registers. Synchronous reset is) Tj T* (sampled on the rising clock edge; asynchronous reset clears state as soon as reset is asserted. Sequential state) Tj T* (updates use nonblocking assignments.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 54.18898 665.7701 cm
+q
+.121569 .372549 .545098 rg
+BT 1 0 0 1 0 3 Tm /F2 11 Tf 14 TL (Counters) Tj T* ET
+Q
+Q
+q
+1 0 0 1 54.18898 540.5701 cm
+q
+1 1 1 rg
+n 0 101 487.5591 -20.2 re f*
+.933333 .956863 .972549 rg
+n 0 80.8 487.5591 -20.2 re f*
+1 1 1 rg
+n 0 60.6 487.5591 -20.2 re f*
+.933333 .956863 .972549 rg
+n 0 40.4 487.5591 -20.2 re f*
+1 1 1 rg
+n 0 20.2 487.5591 -20.2 re f*
+.070588 .141176 .227451 rg
+n 0 121.2 487.5591 -20.2 re f*
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 106 cm
+q
+1 1 1 rg
+BT 1 0 0 1 0 2.1 Tm /F2 8.1 Tf 10.2 TL (Design) Tj T* ET
+Q
+Q
+q
+1 0 0 1 113.7165 106 cm
+q
+1 1 1 rg
+BT 1 0 0 1 0 2.1 Tm /F2 8.1 Tf 10.2 TL (Reset) Tj T* ET
+Q
+Q
+q
+1 0 0 1 190.252 106 cm
+q
+1 1 1 rg
+BT 1 0 0 1 0 2.1 Tm /F2 8.1 Tf 10.2 TL (Behavior from reset) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 85.8 cm
+q
+.141176 .203922 .278431 rg
+BT 1 0 0 1 0 2.1 Tm /F1 8.1 Tf 10.2 TL (4-bit up) Tj T* ET
+Q
+Q
+q
+1 0 0 1 113.7165 85.8 cm
+q
+.141176 .203922 .278431 rg
+BT 1 0 0 1 0 2.1 Tm /F1 8.1 Tf 10.2 TL (0000) Tj T* ET
+Q
+Q
+q
+1 0 0 1 190.252 85.8 cm
+q
+.141176 .203922 .278431 rg
+BT 1 0 0 1 0 2.1 Tm /F1 8.1 Tf 10.2 TL (0 to 15, then wrap to 0) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 65.6 cm
+q
+.141176 .203922 .278431 rg
+BT 1 0 0 1 0 2.1 Tm /F1 8.1 Tf 10.2 TL (4-bit down) Tj T* ET
+Q
+Q
+q
+1 0 0 1 113.7165 65.6 cm
+q
+.141176 .203922 .278431 rg
+BT 1 0 0 1 0 2.1 Tm /F1 8.1 Tf 10.2 TL (1111) Tj T* ET
+Q
+Q
+q
+1 0 0 1 190.252 65.6 cm
+q
+.141176 .203922 .278431 rg
+BT 1 0 0 1 0 2.1 Tm /F1 8.1 Tf 10.2 TL (15 to 0, then wrap to 15) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 45.4 cm
+q
+.141176 .203922 .278431 rg
+BT 1 0 0 1 0 2.1 Tm /F1 8.1 Tf 10.2 TL (Mod-10) Tj T* ET
+Q
+Q
+q
+1 0 0 1 113.7165 45.4 cm
+q
+.141176 .203922 .278431 rg
+BT 1 0 0 1 0 2.1 Tm /F1 8.1 Tf 10.2 TL (0000) Tj T* ET
+Q
+Q
+q
+1 0 0 1 190.252 45.4 cm
+q
+.141176 .203922 .278431 rg
+BT 1 0 0 1 0 2.1 Tm /F1 8.1 Tf 10.2 TL (0 to 9, then return to 0) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 25.2 cm
+q
+.141176 .203922 .278431 rg
+BT 1 0 0 1 0 2.1 Tm /F1 8.1 Tf 10.2 TL (4-bit ring) Tj T* ET
+Q
+Q
+q
+1 0 0 1 113.7165 25.2 cm
+q
+.141176 .203922 .278431 rg
+BT 1 0 0 1 0 2.1 Tm /F1 8.1 Tf 10.2 TL (0001) Tj T* ET
+Q
+Q
+q
+1 0 0 1 190.252 25.2 cm
+q
+.141176 .203922 .278431 rg
+BT 1 0 0 1 0 2.1 Tm /F1 8.1 Tf 10.2 TL (0001, 0010, 0100, 1000, repeat) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 5 cm
+q
+.141176 .203922 .278431 rg
+BT 1 0 0 1 0 2.1 Tm /F1 8.1 Tf 10.2 TL (4-bit Johnson) Tj T* ET
+Q
+Q
+q
+1 0 0 1 113.7165 5 cm
+q
+.141176 .203922 .278431 rg
+BT 1 0 0 1 0 2.1 Tm /F1 8.1 Tf 10.2 TL (0000) Tj T* ET
+Q
+Q
+q
+1 0 0 1 190.252 5 cm
+q
+.141176 .203922 .278431 rg
+BT 1 0 0 1 0 2.1 Tm /F1 8.1 Tf 10.2 TL (Eight-state sequence, then repeat) Tj T* ET
+Q
+Q
+q
+1 J
+1 j
+.811765 .85098 .886275 RG
+.45 w
+n 0 121.2 m 487.5591 121.2 l S
+n 0 0 m 487.5591 0 l S
+n 0 0 m 0 121.2 l S
+n 487.5591 0 m 487.5591 121.2 l S
+n 0 101 m 487.5591 101 l S
+n 0 80.8 m 487.5591 80.8 l S
+n 0 60.6 m 487.5591 60.6 l S
+n 0 40.4 m 487.5591 40.4 l S
+n 0 20.2 m 487.5591 20.2 l S
+n 107.7165 0 m 107.7165 121.2 l S
+n 184.252 0 m 184.252 121.2 l S
+Q
+Q
+Q
+q
+1 0 0 1 54.18898 524.0701 cm
+q
+BT 1 0 0 1 0 2.5 Tm 10.5 TL /F1 8 Tf .356863 .419608 .482353 rg (The full next-state rules and test coverage are in ) Tj /F2 8 Tf (docs/counter_design.md) Tj /F1 8 Tf (.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 54.18898 503.0701 cm
+q
+.121569 .372549 .545098 rg
+BT 1 0 0 1 0 3 Tm /F2 11 Tf 14 TL (Parameterized RTL) Tj T* ET
+Q
+Q
+q
+1 0 0 1 54.18898 457.4701 cm
+q
+.141176 .203922 .278431 rg
+BT 1 0 0 1 0 30.3 Tm /F1 9.3 Tf 13.2 TL (Reusable register, counter, and shift-register modules use a WIDTH parameter. The self-checking testbench) Tj T* (instantiates four-bit and eight-bit variants. Fixed-width modules are used where the exercise specifically asks for) Tj T* (four-bit circuits.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 54.18898 436.4701 cm
+q
+.121569 .372549 .545098 rg
+BT 1 0 0 1 0 3 Tm /F2 11 Tf 14 TL (Finite state machines and mini-project) Tj T* ET
+Q
+Q
+q
+1 0 0 1 54.18898 311.2701 cm
+q
+1 1 1 rg
+n 0 101 487.5591 -20.2 re f*
+.933333 .956863 .972549 rg
+n 0 80.8 487.5591 -20.2 re f*
+1 1 1 rg
+n 0 60.6 487.5591 -20.2 re f*
+.933333 .956863 .972549 rg
+n 0 40.4 487.5591 -20.2 re f*
+1 1 1 rg
+n 0 20.2 487.5591 -20.2 re f*
+.070588 .141176 .227451 rg
+n 0 121.2 487.5591 -20.2 re f*
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 106 cm
+q
+1 1 1 rg
+BT 1 0 0 1 0 2.1 Tm /F2 8.1 Tf 10.2 TL (Controller) Tj T* ET
+Q
+Q
+q
+1 0 0 1 142.063 106 cm
+q
+1 1 1 rg
+BT 1 0 0 1 0 2.1 Tm /F2 8.1 Tf 10.2 TL (Behavior) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 85.8 cm
+q
+.141176 .203922 .278431 rg
+BT 1 0 0 1 0 2.1 Tm /F1 8.1 Tf 10.2 TL (Traffic light \(Moore\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 142.063 85.8 cm
+q
+.141176 .203922 .278431 rg
+BT 1 0 0 1 0 2.1 Tm /F1 8.1 Tf 10.2 TL (RED ) Tj /F4 8.1 Tf 10.2 TL (\256) Tj /F1 8.1 Tf 10.2 TL ( GREEN ) Tj /F4 8.1 Tf 10.2 TL (\256) Tj /F1 8.1 Tf 10.2 TL ( YELLOW ) Tj /F4 8.1 Tf 10.2 TL (\256) Tj /F1 8.1 Tf 10.2 TL ( RED; tick advances state.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 65.6 cm
+q
+.141176 .203922 .278431 rg
+BT 1 0 0 1 0 2.1 Tm /F1 8.1 Tf 10.2 TL (Traffic light \(Mealy\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 142.063 65.6 cm
+q
+.141176 .203922 .278431 rg
+BT 1 0 0 1 0 2.1 Tm /F1 8.1 Tf 10.2 TL (Same state sequence; emergency input immediately overrides outputs to red.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 45.4 cm
+q
+.141176 .203922 .278431 rg
+BT 1 0 0 1 0 2.1 Tm /F1 8.1 Tf 10.2 TL (Vending machine) Tj T* ET
+Q
+Q
+q
+1 0 0 1 142.063 45.4 cm
+q
+.141176 .203922 .278431 rg
+BT 1 0 0 1 0 2.1 Tm /F1 8.1 Tf 10.2 TL (Accepts 5-unit and 10-unit coins for a 15-unit product; reports a 5-unit overpayment.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 25.2 cm
+q
+.141176 .203922 .278431 rg
+BT 1 0 0 1 0 2.1 Tm /F1 8.1 Tf 10.2 TL (Elevator) Tj T* ET
+Q
+Q
+q
+1 0 0 1 142.063 25.2 cm
+q
+.141176 .203922 .278431 rg
+BT 1 0 0 1 0 2.1 Tm /F1 8.1 Tf 10.2 TL (Three-floor controller accepts a valid target and moves one floor per tick.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 6 5 cm
+q
+.141176 .203922 .278431 rg
+BT 1 0 0 1 0 2.1 Tm /F1 8.1 Tf 10.2 TL (Timed traffic-light mini-project) Tj T* ET
+Q
+Q
+q
+1 0 0 1 142.063 5 cm
+q
+.141176 .203922 .278431 rg
+BT 1 0 0 1 0 2.1 Tm /F1 8.1 Tf 10.2 TL (Autonomous Moore FSM with configurable red, green, and yellow durations.) Tj T* ET
+Q
+Q
+q
+1 J
+1 j
+.811765 .85098 .886275 RG
+.45 w
+n 0 121.2 m 487.5591 121.2 l S
+n 0 0 m 487.5591 0 l S
+n 0 0 m 0 121.2 l S
+n 487.5591 0 m 487.5591 121.2 l S
+n 0 101 m 487.5591 101 l S
+n 0 80.8 m 487.5591 80.8 l S
+n 0 60.6 m 487.5591 60.6 l S
+n 0 40.4 m 487.5591 40.4 l S
+n 0 20.2 m 487.5591 20.2 l S
+n 136.063 0 m 136.063 121.2 l S
+Q
+Q
+Q
+q
+1 0 0 1 54.18898 290.2701 cm
+q
+.121569 .372549 .545098 rg
+BT 1 0 0 1 0 3 Tm /F2 11 Tf 14 TL (Diagrams and logic tables) Tj T* ET
+Q
+Q
+q
+1 0 0 1 54.18898 244.6701 cm
+q
+BT 1 0 0 1 0 30.3 Tm 13.2 TL /F1 9.3 Tf .141176 .203922 .278431 rg (The repository includes FSM transition diagrams, circuit-level RTL block diagrams for sequential logic and counters, a) Tj T* (timed traffic-light block diagram, a project RTL overview, a clock/reset timing diagram, and truth tables. GitHub) Tj T* (previews are indexed in ) Tj /F2 9.3 Tf (docs/diagrams/README.md) Tj /F1 9.3 Tf (; truth tables are in ) Tj /F2 9.3 Tf (docs/truth_tables.md) Tj /F1 9.3 Tf (.) Tj T* ET
+Q
+Q
+ 
+
+Q
+q
+0.0 0.0 595.2756 841.8898 re
+W
+n
+1 0 0 1 0 0 cm
+BT
+/F1-0 12 Tf
+14.4 TL
+ET
+1 1 1 rg
+n
+195 394.5 346 12 re
+f*
+0.141176 0.203922 0.278431 rg
+BT
+/F1-0 8.1 Tf
+9.72 TL
+ET
+BT
+1 0 0 1 196.25 397.07 Tm
+(RED \055\076 GREEN \055\076 YELLOW \055\076 RED\073 tick advances state\056) Tj
+T*
+ET
+Q
+
+endstream
+endobj
+14 0 obj
+<<
+/BaseFont /Helvetica
+/Encoding /WinAnsiEncoding
+/Name /F1
+/Subtype /Type1
+/Type /Font
+>>
+endobj
+15 0 obj
+<<
+/Contents 16 0 R
+/MediaBox [ 0 0 595.2756 841.8898 ]
+/Resources <<
+/Font 7 0 R
+/ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>>
+/Rotate 0
+/Trans <<
+>>
+/Type /Page
+/Parent 2 0 R
+>>
+endobj
+16 0 obj
+<<
+/Filter [ /ASCII85Decode /FlateDecode ]
+/Length 2562
+>>
+stream
+Gb"/(968iI'#+6EoO/9e.2h,LAEB&4SWmdSCrT@.<I8^O,U=Pl6NKH!4LID&)ZWH,[U)&XVJ<.Y.Ea%<U-CL2nTE"Y#QMEu1G&TUT#(38$a'`@"h4R>@!2WRZa9+5,^/!8'EX+Y-].@p*-m_ZmQR/'0SIKQ&qZL\EK"sf66]YL5QP:I+\j"GS$<s1B8r,^$+6.rO[8n!MBa36i$OS=,(eJ=6Qa6E^Yh"@4"4K,6J%3&QkaT>j^rfJQV?s]$+.oaapO_@AQG_/&o^i'H-)H3jV%P%1Fg.jpNN!QL"T7*E,YKtpILCUdIuulN5=trn13e!HR!4n9Oa(X'?<O)C3;O;59pZEhXG`b#G)sU!Di$S5]q;_>BRHYf#RUYqY'O*gY)6a5Jl09QSAC9oBl3mWZSFY>[LfcI!;t%BK%47Wt/q(KJDcBD'4,\,RE3BOFe5ZWWDX7Nkt;je[OHc<P0eI0NmR2Sq+UN8?tP.8Tt$MoC2K"%fDY!g^.sP#T"-5)m/nR1H8tsL>pZSA1WAZo=@oopp]JsLq87Cin/BG74ggcc)W.Z13!T4c#]!5JX-"u0.tZf9>>1V:e[lL/+HcZRS%rLf><.1]G:oRRciKMci:GHMWShBenN:&>h$;".cF6D`Sf5"knFIEVb>f<gYeEBQ_4K#[H+il_MM(*:/U5+@+8*><M#+]%q9XI0QH'gF79dh/Uf`*M6Hp[8K-2P-=.N7h4'G:qn9-1@u&!PCAZ'qd0][T%Yg*1ZbKYRqo/N2CsF'2qa<J7n^cVlUiVK;H!QqUD^N?;#[c?#O(Z2mDLC%nq`'S#DKuU)N:+(R2f_LL?jM1?\@^<8XCE1?@h1[hb@Z)IisD:?^N3(ej-S(89\K0/Q&=$1d-Z((_L[K,r`#b).e-H<J16kl'n,#*5^2<YS_K(LnY#Er"'UOKoS9,j]rNhR0sNrBG3ToDm-"%$Wuaom9lrOMgFBg#6amRQ$Yh9k;QWPol%l9V%`?csSO=V=m]o#R5mrENiI@NBhT]qu.q_]SGAPAIMB>-!DeB2n`>8kUa%cV7&7!GiFem[fouJqs3i&Jm`0`=p`:q_b"BR'MjnVL!1T9s#WY0,qb@pmN1Y;aR)<?1U;BrskRV;jRBY$N*2$0)M#DsemJ7am9H%TOpnH+]I6$6U46,?3CYnkkkQE&uF)ALJfM)J7/U]B+NnBr)"M<#gq#.%L#i,ct]_BH=^Dl8SDa-ABLBH;]P4G6,neW7XJTTc'YngaSB/6hP$1V_kof0_Db?u(]Z[hkP#D?k8d;&Yh8.;*GKfim*6[!+=L]_^)hTUSDseXse#G04d(hOJk/-Ok"Z9q(6gd]fS)Uj6i*%?]mLRV+_HL7u:XI@fk8F.Qb51/Ek2:)"T.\U-URF:5IPG]"?EJ;&^9C09D]bBe%TITJs?1C:.FCm+=?k6Fo17_7oKW0=s%9PA3o?Fd;tSi'G$Fauo4eKM4"WAtliR:>MAO>QH=X7HdO(cQT`\67:;4!,@'[hZo;pRet]6^k^DOh_u<1htS2\+?cfkqO)Zle5hlW^8@-O'>\Kj.W&0<0^3^C@tKsSB;Sf<:Dad"\Y50/9?VP]nCA&G(RZsh9P>&j2:4*^X3:`OYKnZ<HUob)2'a7"uVJ9<@tR%Fn@.<KQDgr6MpEF!u?T+L%3u*/h^S3pCUIZ.T,Od'2-Q-3Qq%X*e*qQlL!^#'e-F/VD7D)Kl(I1aOSOr![/e5,]lr+^*[8p/''2n?(tWG2,!c)$)h"MFga&)k`d%\-U!0um`(`4`AIlfI4JgVa!(5AQioPXVkpQ3Dd+eHRL0i@EIu+>&DNt?&#rrg6Cn3_)Rn/mU8SG-oDpJ4N%,0'/TmVXoDC^`p_Vd+P(:P;oYGXXHNU;ucaL:J[R")22A*$`]K<W5:c,f4"g39L+u>Rg\'Z.-S1]pk"4)%9*si/.X%fhP^hhjBbf0pa[VJIm?VFE8)3-jo`nc\!)(TZkh5.G-;o9bHI>!VU(aDXeWD0=!<9bOHHM&Q.8u^?!2MWl_=RoA(_:)<4RM[5ZGs5P5$qUYY*&Ye$KVfLil:3`5<LZD1Ssks980pKsS`5Eg/JED0cDp%28+/cEEK'"o+.)E[VGel@Y@c)[Gr+WHjd61(p;d,b3f1r]!PYk!e"pu)k/5Scf^=_/$/4?arQl4<3ZnEro'nVinW.G49Xbp.c[3.AeM&D=*G!Vg_B!ag#IJ5LimX'^j4Y>Lr%fhq@i@!FP9B$LS_>X%STIZS_4ZUi.[B$pp)uR-gL_$Tk%V_!ACK0bXYSt!BjFhMHltImWYcG7;2*H>mO^2)`s/'%BFs$5k%hbu3<-0D/s`AqTP6X,Vp"hcC2dR;*[>f(3Nf9R!TEQ=<\4[E"7NsTGHWMbTu]9!N&lXdLiA\hrRI-XF]0XWm.HgE9`&cq;oWl&i[79"pGHO;8^]3cIc=Glpu?R!e(@@HIAr*Y$T+1bjBU;s'FF`,$IdVN*b^sNNL95^=#@[RW`hVbQ*,Z9c:#f$<]O:*@!P]$9(Iouc%r7(CarDpiR-fb="VI;$9(Cf<sA(Kc0M5j<\'\VD"fsWLU7!\HfP![~>
+endstream
 endobj
 xref
-0 11
+0 17
 0000000000 65535 f 
-0000000009 00000 n 
-0000000079 00000 n 
-0000000154 00000 n 
-0000002281 00000 n 
-0000002417 00000 n 
-0000004831 00000 n 
-0000004967 00000 n 
-0000007538 00000 n 
-0000007674 00000 n 
-0000007743 00000 n 
+0000000015 00000 n 
+0000000097 00000 n 
+0000000170 00000 n 
+0000000219 00000 n 
+0000000436 00000 n 
+0000000672 00000 n 
+0000003328 00000 n 
+0000003391 00000 n 
+0000003498 00000 n 
+0000003610 00000 n 
+0000003720 00000 n 
+0000003798 00000 n 
+0000004066 00000 n 
+0000012553 00000 n 
+0000012661 00000 n 
+0000012862 00000 n 
 trailer
-<< /Size 11 /Root 10 0 R >>
+<<
+/Size 17
+/Root 3 0 R
+/Info 1 0 R
+>>
 startxref
-7793
+15517
 %%EOF
-
