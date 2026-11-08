@@ -41,4 +41,4 @@ The three-floor elevator accepts a target floor request while idle and moves one
 
 Setup time is the minimum time data must be stable before a capturing clock edge. Hold time is the minimum time data must remain stable after that edge. Ideal RTL simulation with zero-delay assignments demonstrates clock-edge and reset behavior, but does not measure physical setup/hold margins. Those depend on cell and path delays and require timing constraints and static timing analysis.
 
-The timing diagram in `diagrams/timing_reset.svg` illustrates the observable difference between synchronous and asynchronous reset. It is a conceptual diagram; simulator traces will be added after the test suite is run.
+The timing diagram in `diagrams/timing_reset.svg` is a conceptual illustration. The timing testbench passed and generated a VCD trace; its waveform screenshot remains to be captured in GTKWave.
