@@ -1,0 +1,3 @@
+VCD info: dumpfile simulation/vcd/tb_other_fsm.vcd opened for output.
+PASS: vending machine and elevator FSMs
+testbench/tb_other_fsm.v:36: $finish called at 96000 (1ps)
