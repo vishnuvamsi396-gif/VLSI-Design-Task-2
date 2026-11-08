@@ -1,3 +1,4 @@
+`timescale 1ns/1ps
 module tb_counters;
     reg clk = 0;
     always #5 clk = ~clk;
@@ -26,7 +27,7 @@ module tb_counters;
         for (i=1; i<=16; i=i+1) begin
             @(posedge clk); #1;
             if (up !== (i % 16)) $fatal(1, "Up-counter mismatch at %0d", i);
-            if (down !== ((15-i) % 16)) $fatal(1, "Down-counter mismatch at %0d", i);
+            if (down !== ((31-i) % 16)) $fatal(1, "Down-counter mismatch at %0d", i);
             if (mod10 !== (i % 10)) $fatal(1, "Mod-10 mismatch at %0d", i);
             if (ring !== exp_ring[(i-1) % 4]) $fatal(1, "Ring-counter mismatch at %0d", i);
             if (johnson !== exp_johnson[(i-1) % 8]) $fatal(1, "Johnson-counter mismatch at %0d", i);
