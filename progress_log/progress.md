@@ -7,4 +7,4 @@
 - Added sequential logic, counter, parameterized RTL, and FSM controller source files.
 - Added self-checking testbenches for sequential logic, counters, parameterized blocks, traffic lights, vending/elevator controllers, and reset timing.
 - Added an automated Icarus Verilog runner.
-- Simulation has not yet been run in this environment. Record actual results and screenshots only after running and inspecting them.
+- Ran scripts/run_all.sh in Ubuntu/WSL with Icarus Verilog 12.0; all seven self-checking testbenches passed.
