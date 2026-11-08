@@ -1,0 +1,3 @@
+VCD info: dumpfile simulation/vcd/tb_counters.vcd opened for output.
+PASS: up, down, Mod-10, ring, and Johnson counters
+testbench/tb_counters.v:36: $finish called at 166000 (1ps)
