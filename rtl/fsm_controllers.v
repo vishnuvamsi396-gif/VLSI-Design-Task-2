@@ -1,3 +1,4 @@
+`timescale 1ns/1ps
 // Traffic light FSMs use tick as a one-cycle state-advance enable.
 // Colors are active-high one-hot outputs: {red, yellow, green}.
 module traffic_light_moore(input wire clk, input wire reset, input wire tick,
