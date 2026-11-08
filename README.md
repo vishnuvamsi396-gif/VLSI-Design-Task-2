@@ -1,6 +1,6 @@
 # VLSI Design and Semiconductor Engineering - Task 2
 
-This repository contains the Task 2 RTL designs, self-checking testbenches, simulation evidence, diagrams, and project notes.
+This repository contains the Task 2 RTL designs, self-checking testbenches, simulation evidence, diagrams, and project report.
 
 ## Project scope
 
@@ -10,7 +10,7 @@ This repository contains the Task 2 RTL designs, self-checking testbenches, simu
 - FSM controllers: Moore and Mealy traffic lights, vending machine, and elevator.
 - Mini-project: a clocked Moore traffic-light controller with timed state transitions.
 - Verification: self-checking testbenches, simulator logs, and VCD traces. GTKWave screenshots are still to be captured.
-- Documentation: block diagrams, FSM diagrams, timing notes, counter design notes, requirements checklist, and final project report PDF (pending).
+- Documentation: block diagrams, FSM diagrams, timing notes, counter design notes, requirements checklist, and project report PDF.
 
 ## Tools
 
@@ -45,4 +45,4 @@ gtkwave simulation/vcd/tb_traffic_light.vcd
 
 ## Verification status
 
-The seven self-checking testbenches were run in Ubuntu/WSL with Icarus Verilog 12.0 on 2026-11-08 and all passed. The corresponding logs and VCD traces are committed. GTKWave screenshot capture and the final project PDF remain pending.
+The seven self-checking testbenches were run in Ubuntu/WSL with Icarus Verilog 12.0 on 2026-11-08 and all passed. The corresponding logs and VCD traces are committed. The three-page project report PDF is in `docs/task2_project_report.pdf`. GTKWave screenshots remain pending actual visual inspection and capture.
