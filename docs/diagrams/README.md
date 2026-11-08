@@ -1,6 +1,6 @@
 # Task 2 diagrams
 
-These vector diagrams are embedded below so they preview directly on GitHub.
+The vector diagrams are embedded here for direct preview on GitHub.
 
 ## RTL design overview
 ![Task 2 RTL design overview](task2_rtl_overview.svg)
@@ -8,7 +8,13 @@ These vector diagrams are embedded below so they preview directly on GitHub.
 ## Moore traffic-light FSM
 ![Moore traffic-light FSM](traffic_light_fsm.svg)
 
+## Vending machine FSM
+![Vending machine FSM](vending_machine_fsm.svg)
+
+## Elevator controller FSM
+![Elevator controller FSM](elevator_fsm.svg)
+
 ## Clock and reset timing
 ![Clock and reset timing illustration](timing_reset.svg)
 
-The timing figure is conceptual. Simulation screenshots will be added after running the Icarus testbenches and inspecting the generated VCD files in GTKWave.
+The timing figure is conceptual. Captured simulation waveforms are in `simulation/vcd/`; GTKWave screenshots are still pending.
