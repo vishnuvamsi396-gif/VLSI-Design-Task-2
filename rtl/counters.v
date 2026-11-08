@@ -1,3 +1,4 @@
+`timescale 1ns/1ps
 // Four-bit and classic sequence counters. All resets are synchronous and active-high.
 module up_counter_4bit(input wire clk, input wire reset, output reg [3:0] count);
     always @(posedge clk) begin
