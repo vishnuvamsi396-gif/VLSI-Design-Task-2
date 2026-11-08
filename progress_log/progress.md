@@ -7,5 +7,8 @@
 - Added sequential logic, counter, parameterized RTL, and FSM controller source files.
 - Added self-checking testbenches for sequential logic, counters, parameterized blocks, traffic lights, vending/elevator controllers, and reset timing.
 - Added an automated Icarus Verilog runner.
-- Ran scripts/run_all.sh in Ubuntu/WSL with Icarus Verilog 12.0; all seven self-checking testbenches passed.
-- Captured four GTKWave screenshots from the generated VCD traces: sequential logic, counters, traffic-light controller, and reset timing. Saved them in `waveforms/`.\n
+- Ran `scripts/run_all.sh` in Ubuntu/WSL with Icarus Verilog 12.0; all seven self-checking testbenches passed.
+- Added seven simulator logs and seven VCD traces.
+- Captured four GTKWave screenshots from the generated VCD traces: sequential logic, counters, traffic-light controller, and reset timing.
+- Added counter design documentation, truth tables, and previewable RTL block diagrams.
+- Updated the documentation index and checklist to match the Task 2 PDF and current repository contents.

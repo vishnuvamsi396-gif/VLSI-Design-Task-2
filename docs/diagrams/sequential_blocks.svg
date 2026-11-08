@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+<title id="title">Sequential RTL blocks</title><desc id="desc">D flip-flops, parallel registers, and shift registers each have synchronous-reset and asynchronous-reset variants, driven by clock and reset.</desc>
+<defs><style>.t{font-family:Arial,sans-serif;fill:#10243a}.h{font-family:Arial,sans-serif;font-weight:700;fill:#10243a}.sub{font-family:Arial,sans-serif;fill:#43566d}.box{fill:#fff;stroke:#365f91;stroke-width:2}.inner{fill:#eef5ff;stroke:#7b9fc9;stroke-width:1.5}.line{stroke:#315878;stroke-width:3;fill:none}.arrow{marker-end:url(#a)}</style><marker id="a" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 Z" fill="#315878"/></marker></defs>
+<rect width="1200" height="760" fill="#f5f8fc"/>
+<text x="600" y="48" text-anchor="middle" class="h" font-size="30">Sequential RTL Blocks</text>
+<text x="600" y="79" text-anchor="middle" class="sub" font-size="17">Shared inputs: rising-edge clock and active-high reset</text>
+<rect x="455" y="105" width="290" height="68" rx="16" fill="#dcecff" stroke="#3974b8" stroke-width="2"/>
+<text x="600" y="133" text-anchor="middle" class="h" font-size="18">clk + reset</text><text x="600" y="155" text-anchor="middle" class="sub" font-size="14">reset behavior depends on variant</text>
+<path class="line" d="M600 173 V199 M195 199 H1005 M195 199 V218 M600 199 V218 M1005 199 V218"/>
+<g>
+<rect class="box" x="40" y="218" width="310" height="470" rx="18"/><text x="195" y="258" text-anchor="middle" class="h" font-size="22">D Flip-Flop</text>
+<text x="195" y="289" text-anchor="middle" class="sub" font-size="15">One bit stored per clock</text>
+<rect class="inner" x="65" y="320" width="260" height="135" rx="12"/><text x="195" y="354" text-anchor="middle" class="h" font-size="18">Synchronous reset</text><text x="195" y="385" text-anchor="middle" class="t" font-size="15">On rising edge:</text><text x="195" y="412" text-anchor="middle" class="t" font-size="16">reset ? 0 : D</text><text x="195" y="439" text-anchor="middle" class="sub" font-size="14">reset is sampled at clk</text>
+<rect class="inner" x="65" y="480" width="260" height="155" rx="12"/><text x="195" y="514" text-anchor="middle" class="h" font-size="18">Asynchronous reset</text><text x="195" y="548" text-anchor="middle" class="t" font-size="15">reset asserted → Q clears</text><text x="195" y="578" text-anchor="middle" class="t" font-size="15">Otherwise, on rising edge:</text><text x="195" y="608" text-anchor="middle" class="t" font-size="16">Q ← D</text>
+</g>
+<g>
+<rect class="box" x="445" y="218" width="310" height="470" rx="18"/><text x="600" y="258" text-anchor="middle" class="h" font-size="22">Parallel Register</text>
+<text x="600" y="289" text-anchor="middle" class="sub" font-size="15">Stores WIDTH data bits</text>
+<rect class="inner" x="470" y="320" width="260" height="135" rx="12"/><text x="600" y="354" text-anchor="middle" class="h" font-size="18">Synchronous reset</text><text x="600" y="385" text-anchor="middle" class="t" font-size="15">On rising edge:</text><text x="600" y="412" text-anchor="middle" class="t" font-size="16">reset ? 0 : data_in</text><text x="600" y="439" text-anchor="middle" class="sub" font-size="14">all bits captured together</text>
+<rect class="inner" x="470" y="480" width="260" height="155" rx="12"/><text x="600" y="514" text-anchor="middle" class="h" font-size="18">Asynchronous reset</text><text x="600" y="548" text-anchor="middle" class="t" font-size="15">reset asserted → data_out clears</text><text x="600" y="578" text-anchor="middle" class="t" font-size="15">Otherwise, on rising edge:</text><text x="600" y="608" text-anchor="middle" class="t" font-size="16">data_out ← data_in</text>
+</g>
+<g>
+<rect class="box" x="850" y="218" width="310" height="470" rx="18"/><text x="1005" y="258" text-anchor="middle" class="h" font-size="22">Shift Register</text>
+<text x="1005" y="289" text-anchor="middle" class="sub" font-size="15">Serial input shifts into bit 0</text>
+<rect class="inner" x="875" y="320" width="260" height="135" rx="12"/><text x="1005" y="354" text-anchor="middle" class="h" font-size="18">Synchronous reset</text><text x="1005" y="385" text-anchor="middle" class="t" font-size="15">On rising edge:</text><text x="1005" y="412" text-anchor="middle" class="t" font-size="16">reset ? 0 : shift(data_in)</text><text x="1005" y="439" text-anchor="middle" class="sub" font-size="14">serial_in enters bit 0</text>
+<rect class="inner" x="875" y="480" width="260" height="155" rx="12"/><text x="1005" y="514" text-anchor="middle" class="h" font-size="18">Asynchronous reset</text><text x="1005" y="548" text-anchor="middle" class="t" font-size="15">reset asserted → data_out clears</text><text x="1005" y="578" text-anchor="middle" class="t" font-size="15">Otherwise, on rising edge:</text><text x="1005" y="608" text-anchor="middle" class="t" font-size="15">shift left; serial_in to bit 0</text>
+</g>
+<text x="600" y="730" text-anchor="middle" class="sub" font-size="15">RTL source: rtl/sequential.v</text>
+</svg>

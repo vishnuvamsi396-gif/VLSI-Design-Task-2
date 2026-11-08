@@ -9,8 +9,8 @@ This repository contains the Task 2 RTL designs, self-checking testbenches, simu
 - Reusable RTL: parameterized registers, counters, and shift registers.
 - FSM controllers: Moore and Mealy traffic lights, vending machine, and elevator.
 - Mini-project: a clocked Moore traffic-light controller with timed state transitions.
-- Verification: self-checking testbenches, simulator logs, VCD traces, and four GTKWave screenshots covering sequential logic, counters, the traffic-light controller, and reset timing.
-- Documentation: block diagrams, FSM diagrams, timing notes, counter design notes, requirements checklist, and project report PDF.
+- Verification: seven self-checking testbenches, simulator logs, VCD traces, and four GTKWave screenshots.
+- Documentation: RTL block diagrams, FSM diagrams, timing diagram, truth tables, counter design documentation, requirements checklist, and project report PDF.
 
 ## Tools
 
@@ -39,10 +39,12 @@ gtkwave simulation/vcd/tb_traffic_light.vcd
 - `scripts/` - simulation automation
 - `simulation/results/` - captured simulator output
 - `simulation/vcd/` - waveform traces
-- `waveforms/` - four GTKWave screenshots (sequential logic, counters, traffic-light controller, and reset timing)
-- `docs/` - design notes, diagrams, timing analysis, checklist, and report
+- `waveforms/` - GTKWave screenshot previews and image files
+- `docs/` - counter design, truth tables, diagrams, timing notes, checklist, and report
 - `progress_log/` - dated work log
+
+The Task 2 PDF lists GTKWave screenshots as a deliverable but does not specify a required number. Four representative screenshots are included; all seven testbenches also have committed simulator logs and VCD traces.
 
 ## Verification status
 
-The seven self-checking testbenches were run in Ubuntu/WSL with Icarus Verilog 12.0 on 2026-11-08 and all passed. The corresponding logs and VCD traces are committed. The three-page project report PDF is in `docs/task2_project_report.pdf`. Four GTKWave screenshots covering sequential logic, counters, the traffic-light controller, and reset timing are included under `waveforms/`.
+The seven self-checking testbenches were run in Ubuntu/WSL with Icarus Verilog 12.0 on 2026-11-08 and all passed. The corresponding logs and VCD traces are committed. The three-page project report PDF is in `docs/task2_project_report.pdf`.
