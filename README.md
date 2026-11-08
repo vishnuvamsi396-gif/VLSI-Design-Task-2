@@ -1,6 +1,6 @@
 # VLSI Design and Semiconductor Engineering - Task 2
 
-This repository is for Task 2: combinational and sequential RTL design, counters, parameterized modules, finite state machines, timing concepts, and simulation.
+This repository contains the Task 2 RTL designs, self-checking testbenches, simulation evidence, diagrams, and project notes.
 
 ## Project scope
 
@@ -9,8 +9,8 @@ This repository is for Task 2: combinational and sequential RTL design, counters
 - Reusable RTL: parameterized registers, counters, and shift registers.
 - FSM controllers: Moore and Mealy traffic lights, vending machine, and elevator.
 - Mini-project: a clocked Moore traffic-light controller with timed state transitions.
-- Verification: self-checking testbenches, simulation logs, VCD traces, and GTKWave screenshots.
-- Documentation: block diagrams, state diagrams, timing diagrams, counter notes, and a project report.
+- Verification: self-checking testbenches, simulator logs, and VCD traces. GTKWave screenshots are still to be captured.
+- Documentation: block diagrams, FSM diagrams, timing notes, counter design notes, requirements checklist, and final project report PDF (pending).
 
 ## Tools
 
@@ -21,11 +21,10 @@ Ubuntu or WSL, Icarus Verilog (iverilog and vvp), GTKWave, Git, and Visual Studi
 From the repository root:
 
 ```sh
-chmod +x scripts/run_all.sh
-./scripts/run_all.sh
+bash scripts/run_all.sh
 ```
 
-The script will compile and run each testbench, save output logs under simulation/results/, and VCD traces under simulation/vcd/.
+The script compiles and runs each testbench, saves output logs under `simulation/results/`, and VCD traces under `simulation/vcd/`.
 
 To open a waveform:
 
@@ -35,15 +34,15 @@ gtkwave simulation/vcd/tb_traffic_light.vcd
 
 ## Repository layout
 
-- rtl/ - synthesizable Verilog modules
-- testbench/ - self-checking simulation testbenches
-- scripts/ - simulation automation
-- simulation/results/ - captured simulator output
-- simulation/vcd/ - waveform traces
-- waveforms/ - GTKWave screenshots
-- docs/ - design notes, diagrams, timing analysis, checklist, and report
-- progress_log/ - dated work log
+- `rtl/` - synthesizable Verilog modules
+- `testbench/` - self-checking simulation testbenches
+- `scripts/` - simulation automation
+- `simulation/results/` - captured simulator output
+- `simulation/vcd/` - waveform traces
+- `waveforms/` - GTKWave screenshots (to be captured)
+- `docs/` - design notes, diagrams, timing analysis, checklist, and report
+- `progress_log/` - dated work log
 
 ## Verification status
 
-The simulation suite was run in Ubuntu/WSL with Icarus Verilog on 2026-11-08. All seven self-checking testbenches passed. The run produced per-test logs in `simulation/results/` and VCD traces in `simulation/vcd/`. GTKWave screenshot capture and the final project PDF are still pending.
+The seven self-checking testbenches were run in Ubuntu/WSL with Icarus Verilog 12.0 on 2026-11-08 and all passed. The corresponding logs and VCD traces are committed. GTKWave screenshot capture and the final project PDF remain pending.
