@@ -1,3 +1,4 @@
+`timescale 1ns/1ps
 // Sequential logic examples with active-high reset.
 module dff_sync_reset(input wire clk, input wire reset, input wire d, output reg q);
     always @(posedge clk) begin
