@@ -16,6 +16,7 @@ run_tb tb_sequential rtl/sequential.v testbench/tb_sequential.v
 run_tb tb_counters rtl/counters.v testbench/tb_counters.v
 run_tb tb_parameterized rtl/parameterized.v testbench/tb_parameterized.v
 run_tb tb_traffic_light rtl/fsm_controllers.v testbench/tb_traffic_light.v
+run_tb tb_traffic_light_controller rtl/fsm_controllers.v testbench/tb_traffic_light_controller.v
 run_tb tb_other_fsm rtl/fsm_controllers.v testbench/tb_other_fsm.v
 run_tb tb_timing rtl/sequential.v testbench/tb_timing.v
 
