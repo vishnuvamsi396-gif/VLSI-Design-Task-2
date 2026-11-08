@@ -1,0 +1,131 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+2 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+3 0 obj
+<< /Length 2075 >>
+stream
+0.08 0.20 0.35 rg BT /F2 19 Tf 50 752 Td (VLSI DESIGN AND SEMICONDUCTOR ENGINEERING) Tj ET
+0.12 0.34 0.55 rg BT /F2 25 Tf 50 682 Td (Task 2 Project Report) Tj ET
+0.12 0.34 0.55 RG 50 730 m 545 730 l S
+0.08 0.20 0.35 rg BT /F2 14 Tf 50 637 Td (Project overview) Tj ET
+0.12 0.16 0.20 rg BT /F1 10 Tf 50 615 Td (This project implements and verifies reusable digital logic in synthesizable Verilog.) Tj ET
+0.12 0.16 0.20 rg BT /F1 10 Tf 50 600 Td (The work covers sequential circuits, counters, parameterized RTL, finite state machines,) Tj ET
+0.12 0.16 0.20 rg BT /F1 10 Tf 50 585 Td (clock and reset behavior, simulation, and a timed traffic-light controller.) Tj ET
+0.08 0.20 0.35 rg BT /F2 14 Tf 50 562 Td (Objectives) Tj ET
+0.08 0.20 0.35 rg BT /F1 10 Tf 60 540 Td (\267) Tj ET
+0.12 0.16 0.20 rg BT /F1 10 Tf 75 540 Td (Design sequential logic with synchronous and asynchronous reset options.) Tj ET
+0.08 0.20 0.35 rg BT /F1 10 Tf 60 523 Td (\267) Tj ET
+0.12 0.16 0.20 rg BT /F1 10 Tf 75 523 Td (Implement common counters and parameterized reusable RTL blocks.) Tj ET
+0.08 0.20 0.35 rg BT /F1 10 Tf 60 506 Td (\267) Tj ET
+0.12 0.16 0.20 rg BT /F1 10 Tf 75 506 Td (Build Moore and Mealy controllers and practice state-based design.) Tj ET
+0.08 0.20 0.35 rg BT /F1 10 Tf 60 489 Td (\267) Tj ET
+0.12 0.16 0.20 rg BT /F1 10 Tf 75 489 Td (Verify behavior with self-checking testbenches and inspectable waveform traces.) Tj ET
+0.08 0.20 0.35 rg BT /F2 14 Tf 50 464 Td (Development environment) Tj ET
+0.12 0.16 0.20 rg BT /F1 10 Tf 50 442 Td (Ubuntu 26.04.1 LTS under WSL; Icarus Verilog 12.0; GTKWave 3.3.126; Git 2.53.0.) Tj ET
+0.12 0.16 0.20 rg BT /F1 10 Tf 50 427 Td (The project is maintained in a public GitHub repository on its main branch.) Tj ET
+0.08 0.20 0.35 rg BT /F2 14 Tf 50 404 Td (Repository) Tj ET
+0.08 0.34 0.70 rg BT /F1 10 Tf 50 382 Td (https://github.com/vishnuvamsi396-gif/VLSI-Design-Task-2) Tj ET
+0.7 0.75 0.80 RG 50 42 m 545 42 l S
+0.35 0.40 0.48 rg BT /F1 8 Tf 50 27 Td (Task 2 | Project report) Tj ET
+0.35 0.40 0.48 rg BT /F1 8 Tf 525 27 Td (1 / 3) Tj ET
+endstream
+endobj
+4 0 obj
+<< /Type /Page /Parent 9 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R /F2 2 0 R >> >> /Contents 3 0 R >>
+endobj
+5 0 obj
+<< /Length 2362 >>
+stream
+0.08 0.20 0.35 rg BT /F2 19 Tf 50 752 Td (DESIGN AND IMPLEMENTATION) Tj ET
+0.12 0.34 0.55 RG 50 730 m 545 730 l S
+0.08 0.20 0.35 rg BT /F2 14 Tf 50 637 Td (Sequential circuits) Tj ET
+0.12 0.16 0.20 rg BT /F1 10 Tf 50 615 Td (The sequential RTL includes a D flip-flop, an 8-bit register, and a shift register.) Tj ET
+0.12 0.16 0.20 rg BT /F1 10 Tf 50 600 Td (Synchronous reset is sampled on the active clock edge. Asynchronous reset acts) Tj ET
+0.12 0.16 0.20 rg BT /F1 10 Tf 50 585 Td (independently of that edge. Edge-triggered state updates use nonblocking assignments.) Tj ET
+0.08 0.20 0.35 rg BT /F2 14 Tf 50 562 Td (Counters and parameterized blocks) Tj ET
+0.12 0.16 0.20 rg BT /F1 10 Tf 50 540 Td (Implemented counters: 4-bit up and down, Mod-10, 4-bit ring, and 4-bit Johnson.) Tj ET
+0.12 0.16 0.20 rg BT /F1 10 Tf 50 525 Td (Parameterized register, counter, and shift-register modules support multiple widths.) Tj ET
+0.12 0.16 0.20 rg BT /F1 10 Tf 50 510 Td (The self-checking parameter testbench exercises both 4-bit and 8-bit instances.) Tj ET
+0.08 0.20 0.35 rg BT /F2 14 Tf 50 487 Td (Finite state machines) Tj ET
+0.12 0.16 0.20 rg BT /F1 10 Tf 50 465 Td (Traffic-light examples include a Moore controller and a Mealy controller with an) Tj ET
+0.12 0.16 0.20 rg BT /F1 10 Tf 50 450 Td (emergency input. The vending machine accepts 5-unit and 10-unit coins for a 15-unit) Tj ET
+0.12 0.16 0.20 rg BT /F1 10 Tf 50 435 Td (product. The elevator controller handles requests among three floors.) Tj ET
+0.12 0.16 0.20 rg BT /F1 10 Tf 50 420 Td (The mini-project is an autonomous Moore traffic-light controller with configurable) Tj ET
+0.12 0.16 0.20 rg BT /F1 10 Tf 50 405 Td (RED, GREEN, and YELLOW durations. Its outputs depend on the registered state.) Tj ET
+0.08 0.20 0.35 rg BT /F2 14 Tf 50 382 Td (Design documentation) Tj ET
+0.12 0.16 0.20 rg BT /F1 10 Tf 50 360 Td (SVG diagrams show the RTL overview, traffic-light FSM, vending FSM, elevator FSM,) Tj ET
+0.12 0.16 0.20 rg BT /F1 10 Tf 50 345 Td (and a conceptual clock/reset timing illustration. Counter sequences and reset behavior) Tj ET
+0.12 0.16 0.20 rg BT /F1 10 Tf 50 330 Td (are described in docs/design_notes.md.) Tj ET
+0.7 0.75 0.80 RG 50 42 m 545 42 l S
+0.35 0.40 0.48 rg BT /F1 8 Tf 50 27 Td (Task 2 | Design and implementation) Tj ET
+0.35 0.40 0.48 rg BT /F1 8 Tf 525 27 Td (2 / 3) Tj ET
+endstream
+endobj
+6 0 obj
+<< /Type /Page /Parent 9 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R /F2 2 0 R >> >> /Contents 5 0 R >>
+endobj
+7 0 obj
+<< /Length 2519 >>
+stream
+0.08 0.20 0.35 rg BT /F2 19 Tf 50 752 Td (SIMULATION AND SUBMISSION STATUS) Tj ET
+0.12 0.34 0.55 RG 50 730 m 545 730 l S
+0.08 0.20 0.35 rg BT /F2 14 Tf 50 637 Td (Verification results) Tj ET
+0.12 0.16 0.20 rg BT /F1 10 Tf 50 615 Td (All seven self-checking testbenches passed with Icarus Verilog 12.0 in Ubuntu/WSL.) Tj ET
+0.08 0.20 0.35 rg BT /F1 10 Tf 60 600 Td (\267) Tj ET
+0.12 0.16 0.20 rg BT /F1 10 Tf 75 600 Td (Sequential logic and synchronous/asynchronous reset behavior.) Tj ET
+0.08 0.20 0.35 rg BT /F1 10 Tf 60 583 Td (\267) Tj ET
+0.12 0.16 0.20 rg BT /F1 10 Tf 75 583 Td (Up, down, Mod-10, ring, and Johnson counter sequences.) Tj ET
+0.08 0.20 0.35 rg BT /F1 10 Tf 60 566 Td (\267) Tj ET
+0.12 0.16 0.20 rg BT /F1 10 Tf 75 566 Td (Parameterized register, counter, and shift-register operation at 4 and 8 bits.) Tj ET
+0.08 0.20 0.35 rg BT /F1 10 Tf 60 549 Td (\267) Tj ET
+0.12 0.16 0.20 rg BT /F1 10 Tf 75 549 Td (Moore and Mealy traffic-light behavior and timed traffic-light mini-project.) Tj ET
+0.08 0.20 0.35 rg BT /F1 10 Tf 60 532 Td (\267) Tj ET
+0.12 0.16 0.20 rg BT /F1 10 Tf 75 532 Td (Vending-machine and elevator state transitions.) Tj ET
+0.08 0.20 0.35 rg BT /F1 10 Tf 60 515 Td (\267) Tj ET
+0.12 0.16 0.20 rg BT /F1 10 Tf 75 515 Td (Reset timing around rising clock edges.) Tj ET
+0.12 0.16 0.20 rg BT /F1 10 Tf 50 498 Td (The corresponding seven simulator logs are in simulation/results/ and seven VCD) Tj ET
+0.12 0.16 0.20 rg BT /F1 10 Tf 50 483 Td (traces are in simulation/vcd/. Run all tests with: bash scripts/run_all.sh) Tj ET
+0.08 0.20 0.35 rg BT /F2 14 Tf 50 460 Td (Remaining evidence) Tj ET
+0.12 0.16 0.20 rg BT /F1 10 Tf 50 438 Td (GTKWave screenshots still need to be captured after visually inspecting the VCD traces.) Tj ET
+0.12 0.16 0.20 rg BT /F1 10 Tf 50 423 Td (The screenshots are not represented as complete in this report or checklist until) Tj ET
+0.12 0.16 0.20 rg BT /F1 10 Tf 50 408 Td (they are added to waveforms/. The submission checklist is docs/requirements_checklist.md.) Tj ET
+0.08 0.20 0.35 rg BT /F2 14 Tf 50 385 Td (Conclusion) Tj ET
+0.12 0.16 0.20 rg BT /F1 10 Tf 50 363 Td (The RTL and verification flow are organized for reuse. The passing test suite provides) Tj ET
+0.12 0.16 0.20 rg BT /F1 10 Tf 50 348 Td (simulation evidence for the implemented circuits and controllers.) Tj ET
+0.7 0.75 0.80 RG 50 42 m 545 42 l S
+0.35 0.40 0.48 rg BT /F1 8 Tf 50 27 Td (Task 2 | Simulation and submission status) Tj ET
+0.35 0.40 0.48 rg BT /F1 8 Tf 525 27 Td (3 / 3) Tj ET
+endstream
+endobj
+8 0 obj
+<< /Type /Page /Parent 9 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R /F2 2 0 R >> >> /Contents 7 0 R >>
+endobj
+9 0 obj
+<< /Type /Pages /Kids [4 0 R 6 0 R 8 0 R] /Count 3 >>
+endobj
+10 0 obj
+<< /Type /Catalog /Pages 9 0 R >>
+endobj
+xref
+0 11
+0000000000 65535 f 
+0000000009 00000 n 
+0000000079 00000 n 
+0000000154 00000 n 
+0000002281 00000 n 
+0000002417 00000 n 
+0000004831 00000 n 
+0000004967 00000 n 
+0000007538 00000 n 
+0000007674 00000 n 
+0000007743 00000 n 
+trailer
+<< /Size 11 /Root 10 0 R >>
+startxref
+7793
+%%EOF
+
