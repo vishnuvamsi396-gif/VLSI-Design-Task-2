@@ -44,6 +44,6 @@ gtkwave simulation/vcd/tb_traffic_light.vcd
 - docs/ - design notes, diagrams, timing analysis, checklist, and report
 - progress_log/ - dated work log
 
-## Status
+## Verification status
 
-Task 2 work is being developed in sections. Simulation results and screenshots will be added after the corresponding RTL and testbenches have been run and reviewed.
+The simulation suite was run in Ubuntu/WSL with Icarus Verilog on 2026-11-08. All seven self-checking testbenches passed. The run produced per-test logs in `simulation/results/` and VCD traces in `simulation/vcd/`. GTKWave screenshot capture and the final project PDF are still pending.
