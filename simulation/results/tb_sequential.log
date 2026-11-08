@@ -1,0 +1,3 @@
+VCD info: dumpfile simulation/vcd/tb_sequential.vcd opened for output.
+PASS: sequential logic and reset behavior
+testbench/tb_sequential.v:44: $finish called at 36000 (1ps)
