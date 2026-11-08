@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="390" viewBox="0 0 960 390">
+<rect width="960" height="390" fill="#f8fafc"/><text x="480" y="38" text-anchor="middle" font-family="Arial" font-size="24" font-weight="bold" fill="#14213d">Three-floor elevator FSM</text>
+<g font-family="Arial" text-anchor="middle" fill="#102a43">
+<rect x="90" y="95" width="170" height="70" rx="14" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/><text x="175" y="124" font-size="17">FLOOR 0</text><text x="175" y="147" font-size="13">idle at ground</text>
+<rect x="395" y="95" width="170" height="70" rx="14" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/><text x="480" y="124" font-size="17">FLOOR 1</text><text x="480" y="147" font-size="13">idle at middle</text>
+<rect x="700" y="95" width="170" height="70" rx="14" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/><text x="785" y="124" font-size="17">FLOOR 2</text><text x="785" y="147" font-size="13">idle at top</text>
+<rect x="395" y="255" width="170" height="70" rx="14" fill="#fef3c7" stroke="#d97706" stroke-width="2"/><text x="480" y="284" font-size="17">MOVE</text><text x="480" y="307" font-size="13">one clock per floor</text></g>
+<g stroke="#334155" stroke-width="2" fill="none" marker-end="url(#arr)"><path d="M260 112 C310 70 350 70 395 112"/><path d="M395 150 C350 190 310 190 260 150"/><path d="M565 112 C615 70 655 70 700 112"/><path d="M700 150 C655 190 615 190 565 150"/><path d="M175 165 V240 H395"/><path d="M785 165 V240 H565"/><path d="M480 255 V175"/></g>
+<defs><marker id="arr" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#334155"/></marker></defs>
+<g font-family="Arial" font-size="13" fill="#334155"><text x="327" y="77">target=1</text><text x="327" y="190">target=0</text><text x="635" y="77">target=2</text><text x="635" y="190">target=1</text><text x="245" y="230">target above current</text><text x="714" y="230">target below current</text><text x="500" y="220">arrive / stop</text></g>
+<text x="480" y="365" text-anchor="middle" font-family="Arial" font-size="13" fill="#475569">At each floor, the controller compares the requested floor and moves one floor per tick.</text></svg>
