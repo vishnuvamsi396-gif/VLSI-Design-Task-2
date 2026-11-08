@@ -34,7 +34,7 @@ module tb_parameterized;
         end
         direction = 0;
         @(posedge clk); #1;
-        if (count4 !== 4'hF || count8 !== 8'h10) $fatal(1, "Parameterized down-count failed");
+        if (count4 !== 4'hF || count8 !== 8'h0F) $fatal(1, "Parameterized down-count failed");
         $display("PASS: parameterized registers, counters, and shift registers at 4 and 8 bits");
         $finish;
     end
