@@ -1,0 +1,53 @@
+$date
+	Sun Nov  8 06:55:23 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module tb_timing $end
+$var wire 1 ! q_sync $end
+$var wire 1 " q_async $end
+$var reg 1 # clk $end
+$var reg 1 $ d $end
+$var reg 1 % reset $end
+$scope module async_ff $end
+$var wire 1 # clk $end
+$var wire 1 $ d $end
+$var wire 1 % reset $end
+$var reg 1 " q $end
+$upscope $end
+$scope module sync_ff $end
+$var wire 1 # clk $end
+$var wire 1 $ d $end
+$var wire 1 % reset $end
+$var reg 1 ! q $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+0%
+1$
+0#
+x"
+x!
+$end
+#5000
+1"
+1!
+1#
+#7000
+0"
+1%
+#10000
+0#
+#15000
+0!
+1#
+#16000
