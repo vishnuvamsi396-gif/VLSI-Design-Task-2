@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="500" viewBox="0 0 1000 500" role="img" aria-labelledby="title desc">
+<title id="title">Clock and reset timing illustration</title><desc id="desc">Illustrates active-high asynchronous reset clearing immediately, while synchronous reset waits for the next rising clock edge.</desc>
+<rect width="1000" height="500" fill="#fff"/><text x="500" y="42" text-anchor="middle" font-family="Arial,sans-serif" font-size="27" font-weight="700" fill="#0f172a">Reset Behavior Relative to Clock</text>
+<g stroke="#cbd5e1" stroke-width="1"><path d="M180 90 V425 M340 90 V425 M500 90 V425 M660 90 V425 M820 90 V425"/><path d="M160 170 H900 M160 270 H900 M160 370 H900"/></g>
+<g font-family="Arial,sans-serif" font-size="16" fill="#334155"><text x="25" y="145">Clock</text><text x="25" y="245">Reset</text><text x="25" y="345">Q async</text><text x="25" y="405">Q sync</text>
+<text x="170" y="75">time →</text><text x="300" y="455">assert reset</text><text x="635" y="455">next rising edge</text>
+</g>
+<path d="M160 170 H180 V130 H260 V170 H340 V130 H420 V170 H500 V130 H580 V170 H660 V130 H740 V170 H820 V130 H900" fill="none" stroke="#2563eb" stroke-width="4"/>
+<path d="M160 270 H300 V230 H600 V270 H900" fill="none" stroke="#7c3aed" stroke-width="4"/>
+<path d="M160 330 H300 V370 H600 V330 H900" fill="none" stroke="#dc2626" stroke-width="4"/>
+<path d="M160 390 H340 V410 H420 V390 H900" fill="none" stroke="#16a34a" stroke-width="4"/>
+<text x="820" y="343" font-family="Arial,sans-serif" font-size="14" fill="#475569">Illustrative, not a simulator capture</text>
+<text x="500" y="485" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" fill="#475569">Async Q clears at reset assertion; sync Q clears at the next active clock edge.</text>
+</svg>
