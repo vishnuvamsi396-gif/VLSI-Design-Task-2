@@ -1,3 +1,4 @@
+`timescale 1ns/1ps
 // Reusable synchronous RTL building blocks. Reset is active-high.
 module parameterized_register #(parameter WIDTH = 8) (
     input wire clk, input wire reset, input wire [WIDTH-1:0] data_in,
