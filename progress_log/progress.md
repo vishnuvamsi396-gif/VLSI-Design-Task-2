@@ -8,3 +8,4 @@
 - Added self-checking testbenches for sequential logic, counters, parameterized blocks, traffic lights, vending/elevator controllers, and reset timing.
 - Added an automated Icarus Verilog runner.
 - Ran scripts/run_all.sh in Ubuntu/WSL with Icarus Verilog 12.0; all seven self-checking testbenches passed.
+- Captured four GTKWave screenshots from the generated VCD traces: sequential logic, counters, traffic-light controller, and reset timing. Saved them in `waveforms/`.\n
