@@ -17,6 +17,6 @@ Status is based on files present in this public repository and the recorded WSL 
 | Counter design documentation | docs/design_notes.md | Included |
 | VCD simulation traces | simulation/vcd/ | Seven actual traces included |
 | GTKWave screenshots | waveforms/ | Pending visual inspection and screenshot capture |
-| README and project report PDF | README.md, docs/ | README included; final PDF pending |
-| Daily progress log | progress_log/progress.md | Included and dated |
+| README and project report PDF | README.md, docs/task2_project_report.pdf | Both included; report is a 3-page PDF |
+| Daily progress log | progress_log/progress.md and dated evidence addendum | Included |
 | GitHub repository | https://github.com/vishnuvamsi396-gif/VLSI-Design-Task-2 | Public repository on main |
