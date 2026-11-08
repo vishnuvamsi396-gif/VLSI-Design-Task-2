@@ -9,7 +9,7 @@ This repository contains the Task 2 RTL designs, self-checking testbenches, simu
 - Reusable RTL: parameterized registers, counters, and shift registers.
 - FSM controllers: Moore and Mealy traffic lights, vending machine, and elevator.
 - Mini-project: a clocked Moore traffic-light controller with timed state transitions.
-- Verification: self-checking testbenches, simulator logs, and VCD traces. GTKWave screenshots are still to be captured.
+- Verification: self-checking testbenches, simulator logs, VCD traces, and four GTKWave screenshots covering sequential logic, counters, the traffic-light controller, and reset timing.
 - Documentation: block diagrams, FSM diagrams, timing notes, counter design notes, requirements checklist, and project report PDF.
 
 ## Tools
@@ -39,10 +39,10 @@ gtkwave simulation/vcd/tb_traffic_light.vcd
 - `scripts/` - simulation automation
 - `simulation/results/` - captured simulator output
 - `simulation/vcd/` - waveform traces
-- `waveforms/` - GTKWave screenshots (to be captured)
+- `waveforms/` - four GTKWave screenshots (sequential logic, counters, traffic-light controller, and reset timing)
 - `docs/` - design notes, diagrams, timing analysis, checklist, and report
 - `progress_log/` - dated work log
 
 ## Verification status
 
-The seven self-checking testbenches were run in Ubuntu/WSL with Icarus Verilog 12.0 on 2026-11-08 and all passed. The corresponding logs and VCD traces are committed. The three-page project report PDF is in `docs/task2_project_report.pdf`. GTKWave screenshots remain pending actual visual inspection and capture.
+The seven self-checking testbenches were run in Ubuntu/WSL with Icarus Verilog 12.0 on 2026-11-08 and all passed. The corresponding logs and VCD traces are committed. The three-page project report PDF is in `docs/task2_project_report.pdf`. Four GTKWave screenshots covering sequential logic, counters, the traffic-light controller, and reset timing are included under `waveforms/`.
