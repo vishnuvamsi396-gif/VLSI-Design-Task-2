@@ -1,0 +1,3 @@
+VCD info: dumpfile simulation/vcd/tb_parameterized.vcd opened for output.
+PASS: parameterized registers, counters, and shift registers at 4 and 8 bits
+testbench/tb_parameterized.v:39: $finish called at 186000 (1ps)
