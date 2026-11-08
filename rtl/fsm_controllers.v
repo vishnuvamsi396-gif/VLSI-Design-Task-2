@@ -71,7 +71,7 @@ module vending_machine(input wire clk, input wire reset, input wire coin5, input
         next_state = state;
         change5 = 1'b0;
         case (state)
-            C0:  if (coin5) state_next_dummy();
+            C0:  if (coin5) next_state = C5;
                  else if (coin10) next_state = C10;
             C5:  if (coin5) next_state = C10;
                  else if (coin10) next_state = VEND;
