@@ -1,0 +1,3 @@
+VCD info: dumpfile simulation/vcd/tb_timing.vcd opened for output.
+PASS: synchronous/asynchronous reset timing around clock edges
+testbench/tb_timing.v:21: $finish called at 16000 (1ps)
